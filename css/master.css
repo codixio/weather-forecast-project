@@ -1,0 +1,106 @@
+@import "components/typo.css";
+@import "components/swiper.css";
+@import "components/results.css";
+
+body {
+    background-color: #000000;
+    color: rgb(226, 226, 226);
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+  main {
+    background-color: #b957cd;
+  }
+  
+  main .container {
+    background-color: #989898;
+    overflow: hidden;
+  }
+
+.header-container {
+    background-image: url("../images/city_landscape_1.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    position: relative;
+}
+
+.header-title,
+.header-info,
+.container-select {
+    text-align: center;
+    font-size: 2em;
+    --background-color: #000000;
+    color: #eaf6ff;
+    text-shadow: 6px 6px 8px rgb(14, 29, 64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+.header-title {
+    margin-top: -60px;
+}
+
+.header-info {
+    margin-top: -20px;
+}
+
+.container-select {
+    margin-top: 70px;
+}
+
+.select-city {
+    position: relative;
+}
+
+.select-city::after { 
+    content: '';
+    border-width: 3px;
+    border-style: solid;
+    border-color: #999 0.2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+    pointer-events: none;
+}
+
+.select-city:hover::after {
+    border-color: #25B7D3;
+}
+
+@media (max-width: 1080) {
+    .header-title,
+    .header-info {
+      font-size: 1.6em;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-title,
+    .header-info {
+      font-size: 1.1em;
+    }
+}
+
+.footer-copyright {
+    text-align: center;
+    margin: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    background-color: #ffffff !important;
+    box-shadow: 1px 4px 12px rgb(180, 180, 180, 0.5);
+}
