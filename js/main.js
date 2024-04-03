@@ -156,7 +156,7 @@ function getWeather(longitude, latitude, city, country) {
   return fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      let html = `<h3>Daily weather for the next 7 day for ${city}, ${country}</h3>`;
+      let html = `<h3>Daily weather for the next 7 days for ${city}, ${country}</h3>`;
       cityName.innerHTML = html;
       updateSwiper(data);
     });
